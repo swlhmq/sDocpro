@@ -276,9 +276,10 @@ Download objects and refs from another repository
 （1）无选项，可从网络端或本地其他仓获取。  
 获取所有origin下所有分支数据。  
 （2）\<repo\> \<from\>\<:to\>  
-从指定仓、分支获取。  
-git fetch origin master  
-（3）--dry-run  
+从指定仓、分支获取。  
+不带to时获取commit到FETCH_HEAD，否则到to（本地一个跟踪分支）。  
+git fetch origin master  
+（3）--dry-run  
 虚拟运行，显示哪些会被获取。  
 $ git fetch origin edit --dry-run
 From https://github.com/swlhmq/hello  
