@@ -149,9 +149,12 @@ git rm
 Remove files from the working tree and from the index  
 常用选项：  
 （1）无选项  
-删除库上文件。  
-git rm hello.c  
+删除工作区和INDEX区文件。  
+git rm hello.c  
 git commit -m “delete hello.c”  
+（2）--cached  
+删除INDEX区文件，工作区仍保留。  
+git rm --cached hello.c  
 
 
 git stash
