@@ -91,6 +91,10 @@ Show commit logs
 git log  
 显示分支br_one的提交信息。  
 git log br_one  
+显示远程分支master的提交信息。  
+git log origin/master  
+显示refs的提交信息，refs可在.git/refs下找到。  
+git log refs/head/perf-opencsd-v4.9  
 （2）--stat  
 显示当前分支的提交信息，以统计方式显示，含文件名、修改行数等。  
 git log --stat  
