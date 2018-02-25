@@ -202,14 +202,14 @@ Checkout a branch or paths to the working tree
 （1）无选项  
 git checkout <branch>，例如Checkout某一branch到工作区。  
 git checkout br_one  
-git checkout <DIR>，例如Checkout当前目录from INDEX到工作区。  
+git checkout \<DIR\>，例如Checkout当前目录from INDEX到工作区。  
 git checkout .  
 （2）-b  
 基于（当前）分支创建新分支，并切换到新分支，新分支含原分支所有commits。  
 git checkout -b br_master1  
 （3）--file_name  
 Checkout某文件，从INDEX到工作区。  
-git checkout –hello.c  
+git checkout --hello.c  
 
 注意事项：  
 （1）checkout分支时将覆盖工作区和INDEX内容，切换时提示，故切换分支时已有修改需要提交或stash。  
@@ -257,10 +257,10 @@ Clone a repository into a new directory
 常用选项：  
 （1）无选项  
 Clone一个网络仓。  
-git clone https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
+git clone https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git  
 （2）-o <name>  
 Instead of using the remote name origin to keep track of the upstream repository, use <name>.  
-git clone https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git -o my_linux
+git clone https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git -o my_linux  
 so named “my_linux/master”，否则为“origin/master”，仓目录仍为linux。  
 
 
@@ -271,19 +271,19 @@ Download objects and refs from another repository
 常用选项：  
 （1）无选项，可从网络端或本地其他仓获取。  
 获取所有origin下所有分支数据。  
-（2）<repo> <from><:to>  
+（2）\<repo\> \<from\>\<:to\>  
 从指定仓、分支获取。  
 git fetch origin master  
 （3）--dry-run  
 虚拟运行，显示哪些会被获取。  
 $ git fetch origin edit --dry-run
-From https://github.com/swlhmq/hello
- * branch            edit        -> FETCH_HEAD
-   888a44b..88414cc  edit        -> origin/edit
+From https://github.com/swlhmq/hello  
+ * branch            edit        -> FETCH_HEAD  
+   888a44b..88414cc  edit        -> origin/edit  
 去除--dry-run获取同上，再次获取为空：  
-$ git fetch origin edit
-From https://github.com/swlhmq/hello
- * branch            edit        -> FETCH_HEAD
+$ git fetch origin edit  
+From https://github.com/swlhmq/hello  
+ * branch            edit        -> FETCH_HEAD  
 注意事项：  
 （1）fetch只更新本地数据库，代码合并需要调用git merge。  
 
@@ -334,10 +334,10 @@ git merge origin/next
 
 注意事项：  
 （1）merge将覆盖工作区和INDEX内容，切换时提示：  
-error: Your local changes to the following files would be overwritten by merge:
-        README.md
-Please, commit your changes or stash them before you can merge.
-Aborting
+error: Your local changes to the following files would be overwritten by merge:  
+        README.md  
+Please, commit your changes or stash them before you can merge.  
+Aborting  
 
 
 git push
@@ -347,16 +347,16 @@ Update remote refs along with associated objects
 （1）git push  
 Works like git push <remote>, where <remote> is the current branch’s remote  
 提交本地commits到默认remote。  
-（2）
+（2）  
 
 
 git rebase
 ===
-Forward-port local commits to the updated upstream head   
-注意只能在本地分支进行，不能在公共分支上使用。   
-常用选项：  
-（1）git rebase branch_name    
-例如本地位于edit分支，执行：  
-git rebase master   
-基于master分支，将br_edit上差异commit依次追加到master分支上。  
+Forward-port local commits to the updated upstream head  
+注意只能在本地分支进行，不能在公共分支上使用。  
+常用选项：  
+（1）git rebase branch_name  
+例如本地位于edit分支，执行：  
+git rebase master  
+基于master分支，将br_edit上差异commit依次追加到master分支上。  
 
