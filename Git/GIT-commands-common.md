@@ -293,6 +293,26 @@ From https://github.com/swlhmq/hello
 （1）fetch只更新本地数据库，代码合并需要调用git merge。  
 
 
+git-cherry-pick
+===
+Apply the changes introduced by some existing commits  
+常用选项：  
+（1）无选项  
+获取指定commits,从本地数据库搜索。  
+git cherry-pick commit-id  
+获取分支br_one的最后一个commit  
+git cherry-pick br_one  
+获取分支br_one的最后两个commit  
+git cherry-pick br_one~ br_one  
+（2）-x  
+获取时同时取得original commit message。  
+git cherry-pick -x commit-id  
+（3）cqa  
+git cherry-pick --continue  
+git cherry-pick --quit  
+git cherry-pick --abort  
+
+
 git merge
 ===
 Join two or more development histories together  
