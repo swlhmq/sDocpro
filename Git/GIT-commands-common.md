@@ -397,3 +397,19 @@ Forward-port local commits to the updated upstream head
 git rebase master  
 基于master分支，将br_edit上差异commit依次追加到master分支上。  
 
+
+git format-patch
+===
+Prepare patches for e-mail submission  
+
+
+git am
+===
+Apply a series of patches from a mailbox  
+
+
+git apply
+===
+Apply a patch to files and/or to the index  
+
+
