@@ -269,6 +269,15 @@ git clone https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git
 Instead of using the remote name origin to keep track of the upstream repository, use <name>.  
 git clone https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git -o my_linux  
 so named “my_linux/master”，否则为“origin/master”，仓目录仍为linux。  
+（3）--mirror  
+Set up a mirror of the source repository.  
+建立镜像库，可供其它client下载。   
+例如：git clone --mirror https://github.com/Linaro/OpenCSD.git   
+在~/gitmirror下建立镜像库，则client可下载   
+git clone ssh:username@10.10.10.10/gitmirror/OpenCSD.git  
+（4）--bare  
+Make a bare Git repository.  
+只生成git数据库仓，无工作目录，通常用于建server git库。  
 
 
 git fetch
