@@ -400,12 +400,21 @@ git rebase master
 
 git format-patch
 ===
-Prepare patches for e-mail submission  
+Prepare patches for e-mail submission   
+（1）-\<n\>  
+Prepare patches from the topmost <n> commits.   
+例如从最近的3个commit打3个patch。  
+git format-patch -3  
+（2）-o \<path\>   
+patch生成到path下，未指定则生成到当前目录下。  
 
 
 git am
 ===
 Apply a series of patches from a mailbox  
+（1）无选项  
+例如，应用patches下所有patch。  
+git am ~/patches/*.patch  
 
 
 git apply
