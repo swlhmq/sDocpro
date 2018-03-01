@@ -414,6 +414,7 @@ patch生成到path下，未指定则生成到当前目录下。
 git am
 ===
 Apply a series of patches from a mailbox  
+应用patch直接形成commit节点。   
 （1）无选项  
 例如，应用patches下所有patch。  
 git am ~/patches/*.patch  
@@ -421,6 +422,10 @@ git am ~/patches/*.patch
 
 git apply
 ===
-Apply a patch to files and/or to the index  
-
+Apply a patch to files and/or to the index   
+应用patch到工作区或INDEX区。   
+可应用diff生成的patch。   
+（1）无选项  
+例如，应用patch。  
+git am ~/patches/hello.patch  
 
