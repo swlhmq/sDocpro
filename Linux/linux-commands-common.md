@@ -1,3 +1,12 @@
+
+mount
+===
+mount   
+
+unmount
+===
+unmount   
+
 tar
 ===
 GNU `tar' saves many files together into a single tape or disk archive, and can restore individual files from the archive.   
