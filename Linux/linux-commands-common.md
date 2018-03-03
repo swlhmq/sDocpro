@@ -1,4 +1,24 @@
 
+df
+===
+df   
+
+du
+===
+du   
+
+find
+===
+find   
+
+grep
+===
+grep   
+
+ln
+===
+ln   
+
 mount
 ===
 mount   
