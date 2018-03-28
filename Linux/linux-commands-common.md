@@ -1,3 +1,36 @@
+linuxcommand.org
+
+Navigation
+===
+pwd
+---
+print working directory   
+
+cd
+---
+change directory
+
+ls
+---
+list files and directories
+
+Looking Around
+===
+less
+---
+view text files
+
+file
+---
+classify a file's contents
+
+
+
+
+cat
+---
+cat -v
+
 
 df
 ===
