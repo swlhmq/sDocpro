@@ -34,7 +34,7 @@ more-consequents;]
 [else alternate-consequents;]   
 fi    
 
-for example   
+for example, to check whether input params include "aa":   
 if [[ $@ == *"aa"* ]]; then   
     echo "do aa"   
 if   
