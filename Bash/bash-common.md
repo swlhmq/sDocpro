@@ -34,8 +34,10 @@ more-consequents;]
 [else alternate-consequents;]   
 fi    
 
-for example
-
+for example   
+if [[ $@ == *"aa"* ]]; then   
+    echo "do aa"   
+if   
 
 for
 ===
