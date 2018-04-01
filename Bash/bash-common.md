@@ -14,6 +14,16 @@ ${variable_name}
 skill="Java"   
 echo "I am good at ${skill}Script"
 
+params
+===
+$@, all params   
+$#, the number of params   
+$1, $2 .., the 1st, 2nd .. param   
+
+for example:   
+./bashtestp.sh aa bb   
+the number of params is 2.   
+
 if
 ===
 The syntax of the if command is:   
